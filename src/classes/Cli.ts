@@ -403,6 +403,8 @@ class Cli {
           if (selectedVehicle) {
             if (selectedVehicle.constructor.name === 'Motorbike') {
               (selectedVehicle as Motorbike).wheelie()
+            } else {
+              console.log('This vehicle cannot wheelie because it is not a motorbike.')
             }
           }
         }
